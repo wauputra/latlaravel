@@ -5,6 +5,7 @@
 @section('container')
 <main role="main" class="inner cover">
     <h1 class="cover-heading">Daftar Riwayat</h1>
+
     <table class="table table-striped">
   <thead class="thead-light">
     <tr>

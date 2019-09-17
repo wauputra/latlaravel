@@ -46,6 +46,7 @@
         <a class="nav-link" href="{{ url('/') }}">Beranda</a>
         <a class="nav-link" href="{{ url('/tentang') }}">Tentang</a>
         <a class="nav-link" href="{{ url('/riwayat') }}">Riwayat</a>
+        <a class="nav-link" href="{{ url('/historys') }}">History</a>
       </nav>
     </div>
   </header>

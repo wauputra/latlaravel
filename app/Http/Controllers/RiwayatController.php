@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Riwayat;
+
 class RiwayatController extends Controller
 {
     /**
@@ -13,8 +15,10 @@ class RiwayatController extends Controller
      */
     public function index()
     {
-        //$riwayat = DB::Table('historys')->get();
-        $riwayat = \App\History::all();
+        /** query builder
+         * $riwayat = DB::Table('historys')->get();
+         **/
+        $riwayat = Riwayat::all();
 
         return view('riwayat.index', ['riwayat' => $riwayat]);
     }

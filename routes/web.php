@@ -23,3 +23,13 @@ return view('tentang', ['nama' => $nama]);
 Route::get('/', 'PagesController@home');
 Route::get('/tentang', 'PagesController@tentang');
 Route::get('/riwayat', 'RiwayatController@index');
+
+// Route::get('/historys', 'HistorysController@index');
+// Route::get('/historys/create', 'HistorysController@create');
+// Route::get('/historys/{his}', 'HistorysController@show');
+// Route::post('/historys', 'HistorysController@store');
+// Route::delete('/historys/{his}', 'HistorysController@destroy');
+// Route::get('/historys/{his}/edit', 'HistorysController@edit');
+// Route::patch('historys/{his}', 'HistorysController@update');
+
+Route::resource('historys', 'HistorysController');
